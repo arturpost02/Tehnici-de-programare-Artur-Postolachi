@@ -79,3 +79,20 @@ Pentru prevenirea acestor vulnerabilități sunt importante interogările SQL pa
 Am utilizat bibliotecile `requests`, `re`, `argparse` și `json`. Testele automate au confirmat funcționarea clientului HTTP pe mediul local de testare.
 
 Lucrarea mi-a permis să înțeleg principiile recunoașterii web și importanța testării aplicațiilor într-un mediu autorizat.
+### B6 – Apărarea împotriva SQL Injection
+
+Am creat fișierul arsenal/web/aparare_sqli.py,
+utilizând biblioteca sqlite3.
+
+Am construit o bază de date temporară și am
+folosit interogări SQL parametrizate.
+
+Rezultatele obținute:
+- Utilizator existent: [('artur', 'x')]
+- Utilizator inexistent: []
+- Test protecție SQL Injection: []
+
+Concluzie:
+Interogarea parametrizată tratează valorile
+introduse de utilizator ca date, nu ca instrucțiuni
+SQL, prevenind acest tip de SQL Injection.

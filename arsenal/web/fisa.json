@@ -1,0 +1,14 @@
+{
+    "tinta": "http://127.0.0.1:8000",
+    "server": "SimpleHTTP Python/3.15.0",
+    "directoare": [
+        "admin",
+        "login",
+        "uploads"
+    ],
+    "linkuri": [
+        "admin/",
+        "login/",
+        "uploads/"
+    ]
+}

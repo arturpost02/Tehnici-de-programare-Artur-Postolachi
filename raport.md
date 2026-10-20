@@ -95,4 +95,33 @@ Rezultatele obținute:
 Concluzie:
 Interogarea parametrizată tratează valorile
 introduse de utilizator ca date, nu ca instrucțiuni
-SQL, prevenind acest tip de SQL Injection.
+SQL, prevenind acest tip de SQL Injection.  
+### B1 – Cerere HTTP normală
+
+Am utilizat clientul HTTP creat anterior pentru
+a trimite o cerere GET către serverul Kali Linux.
+
+Adresa: http://192.168.56.101:8080
+
+Rezultate:
+- Cod HTTP: 200
+- Lungime răspuns: 9 octeți
+- Conținut: Lab 5 OK
+
+### Test pregătitor pentru B2 – Compararea răspunsurilor
+
+Am trimis două cereri HTTP cu parametri diferiți:
+- id=1
+- id=2
+
+Rezultate:
+- Răspuns ID 1: 9 octeți
+- Răspuns ID 2: 9 octeți
+- Răspunsurile sunt identice.
+
+Concluzie:
+Serverul HTTP simplu returnează același conținut
+indiferent de valoarea parametrului id.
+
+Testul demonstrează compararea răspunsurilor HTTP,
+dar nu confirmă o vulnerabilitate SQL Injection.

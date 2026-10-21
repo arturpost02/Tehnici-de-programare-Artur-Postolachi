@@ -82,7 +82,7 @@ for c in cuvinte:
     url = tinta.rstrip("/") + "/" + c
 
     try:
-        r = cere(url, timeout=10)
+        r = cere(url)
 
         if r.status_code == 200:
             gasite.append(c)
@@ -105,7 +105,7 @@ import re
 
 print("\n--- LINKURI GASITE ---")
 
-r = cere(tinta, timeout=10)
+r = cere(tinta)
 
 linkuri = re.findall(r'href="([^"]+)"', r.text)
 
@@ -122,7 +122,7 @@ from pathlib import Path
 print("\n--- A7: FISA JSON ---")
 
 # Citim informatiile serverului
-raspuns = cere(tinta, timeout=10)
+raspuns = cere(tinta)
 
 # Construim fisa
 fisa = {

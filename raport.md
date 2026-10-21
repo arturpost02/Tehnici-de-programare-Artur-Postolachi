@@ -125,3 +125,42 @@ indiferent de valoarea parametrului id.
 
 Testul demonstrează compararea răspunsurilor HTTP,
 dar nu confirmă o vulnerabilitate SQL Injection.
+## Rezultatele demonstrațiilor locale B2–B5
+
+### B2 – SQL Injection
+
+Am creat o bază de date SQLite temporară, cu trei utilizatori fictivi, și am comparat o interogare nesigură cu una parametrizată.
+
+Rezultate:
+- Cerere normală: 1 utilizator.
+- Intrare SQL de test: 3 utilizatori.
+- Interogare parametrizată: 0 utilizatori.
+
+### B3 – Testarea automată a intrărilor
+
+Am verificat patru tipuri de intrări: ID existent, ID inexistent, text cu apostrof și intrarea SQL din B2.
+
+Am observat că interogarea nesigură poate produce erori sau rezultate nedorite, în timp ce interogarea parametrizată tratează valorile ca date.
+
+### B4 – Protecția împotriva LFI
+
+Am utilizat biblioteca `pathlib` pentru verificarea căilor către fișiere.
+
+Rezultate:
+- Fișier permis: citit cu succes.
+- Fișier inexistent: mesaj corespunzător.
+- Cale în afara directorului autorizat: acces blocat.
+
+### B5 – SQL UNION și regex
+
+Am creat două tabele SQLite cu date fictive și am combinat rezultatele folosind `UNION`.
+
+Am utilizat `re.findall()` pentru identificarea codurilor de test formate din 32 de caractere hexazecimale.
+
+Rezultat: 3 coduri identificate.
+
+### Concluzie privind Lucrarea B
+
+Am demonstrat local principiile SQL Injection, interogărilor parametrizate, validării căilor către fișiere, operației SQL UNION și expresiilor regulate.
+
+Exercițiile B1–B5 nu au fost executate pe DVWA/Metasploitable2, ci adaptate pentru demonstrații locale. Prin urmare, realizarea lor nu reprezintă confirmarea vulnerabilităților pe ținta cerută în laborator.

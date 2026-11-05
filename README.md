@@ -1,17 +1,26 @@
-# Tehnici de programare
+# Tehnici de programare — Artur Postolachi
 
-Lucrările de laborator ale studentului Artur Postolachi.
+Laboratoarele sunt organizate după numerotarea lucrărilor confirmată de student. Cele două rapoarte LearnPython și Linux Luminarium aparțin împreună LAB 3.
 
-| Laborator | Conținut | Raport |
-| --- | --- | --- |
-| [Lab 5](lab5/) | Recon web, HTTP, demonstrații SQL și validarea căilor | [Raport Lab 5](lab5/raport.md) |
-| [Lab 6](lab6/) | Decodare, forensics și steganografie | [Raport Lab 6](lab6/raport.md) |
-| [Lab 8](lab8/) | Exerciții Git și depanarea inventarului | [Instrucțiuni Lab 8](lab8/README.md) |
+| Laborator | Lucrare | Fișiere |
+|---|---|---|
+| LAB 1 | pwn.college — Start Here | [Raport](lab1/Raport_Start_Here.docx) |
+| LAB 2 | Codédex — Python | [Raport](lab2/Raport_Codedex.docx) |
+| LAB 3 | LearnPython și Linux Luminarium | [LearnPython](lab3/Raport_LearnPython.docx) · [Linux Luminarium](lab3/Raport_Linux_Luminarium.docx) |
+| LAB 4 | Funcții, metode și importuri pe web | [Arhivă ZIP](lab4/LAB_04_Web.zip) |
+| LAB 5 | Aplicația web: recon, conținut și exploatare | [ZIP](lab5/LAB_05.zip) · [Raport](lab5/raport.md) · [Surse](lab5/) |
+| LAB 6 | Forensics și steganografie | [ZIP](lab6/LAB_06.zip) · [Raport](lab6/raport.md) · [Surse](lab6/) |
+| LAB 7 | Numerotare/conținut de confirmat | Nu este atribuită o lucrare fără confirmare |
+| LAB 8 | GitHub (A) și depanare Git (B) | [ZIP](lab8/LAB_08.zip) · [Instrucțiuni și surse](lab8/) |
+| LAB 9 | Colecții | Rezolvare identificată local, încă nepostată |
+| LAB 10 | Funcții și excepții | Rezolvare identificată local, încă nepostată |
 
-Fiecare folder are propriile instrucțiuni de rulare. Comenzile din acestea se execută din folderul laboratorului respectiv.
+## Cum sunt păstrate lucrările
 
-Rapoartele anterioare în format Word, `main.py` și `checker.py` sunt păstrate în rădăcina depozitului.
+LAB 1–3 conțin rapoartele Word originale. LAB 4 este arhiva web originală, mutată din lab5, unde fusese grupată anterior. LAB 5, 6 și 8 au și arhive ZIP pentru descărcare; codul rămâne disponibil pentru consultare. ZIP-urile se extrag separat, apoi se urmează instrucțiunile din folderul laboratorului.
 
-Depozitul separat pentru exercițiul A10: [exercitiu-2](https://github.com/arturpost02/exercitiu-2).
+Fișierele main.py și checker.py din rădăcină sunt exercițiul „Verificatorul stării site-urilor”; numărul său nu este confirmat.
 
-Istoricul original al commit-urilor este păstrat; organizarea în foldere este un commit ulterior.
+Această modificare organizează materialele existente și păstrează istoricul Git. Nu certifică îndeplinirea fiecărei cerințe și nu publică noile soluții pregătite separat.
+
+Depozitul separat pentru exercițiul A10 din LAB 8: [exercitiu-2](https://github.com/arturpost02/exercitiu-2).

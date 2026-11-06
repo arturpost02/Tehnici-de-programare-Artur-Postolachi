@@ -19,7 +19,7 @@ Laboratoarele sunt organizate după numerotarea lucrărilor confirmată de stude
 
 LAB 1–3 conțin rapoartele Word originale. LAB 4 este arhiva web originală, mutată din lab5, unde fusese grupată anterior. LAB 5, 6 și 8 au și arhive ZIP pentru descărcare; codul rămâne disponibil pentru consultare. ZIP-urile se extrag separat, apoi se urmează instrucțiunile din folderul laboratorului.
 
-Fișierele main.py și checker.py din rădăcină sunt exercițiul „Verificatorul stării site-urilor”; numărul său nu este confirmat.
+[Atestarea 1](Atestarea%201/) conține `main.py` și `checker.py`, pentru exercițiul „Verificatorul stării site-urilor”, grupate la cererea studentului.
 
 Această modificare organizează materialele existente și păstrează istoricul Git. LAB 7 a fost adăugat ulterior, cu enunț și rezolvare, din arhiva aprobată de student. Celelalte soluții pregătite separat rămân nepublicate.
 
